@@ -13,6 +13,7 @@ function CalcularAreaPerdida() {
       var areaPivo = 3.14 *(raio *raio);
 
       var numero = area.toFixed(2);
+      areaPivo.toFixed(2);
       resultado.innerText = "A área não utilizada é: " + numero + " m²";
       resultado2.innerText = "A área total desse pivô é: "+ areaPivo +"m²" 
   } else {
