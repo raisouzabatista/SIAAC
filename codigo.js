@@ -39,7 +39,7 @@ function CalcularArea(){
         alert("Não foi possível verificar");
     } else{
         somaTotal += area1; // Adiciona a área ao total
-        document.getElementById("area2").innerText = "A área formada pelos pontos até agora dão: "+somaTotal+ " u. A";
+        document.getElementById("area2").innerText = "A área formada pelos pontos até agora dão: "+somaTotal+ " m²";
     }
 }
 
