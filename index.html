@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIAAC</title>
+    <link rel="shortcut icon" href="fotos/SIAAC.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="tudo">
+    <header class="text-center my-5">
+        <h1 class="display-4">Bem-vindo ao Projeto da SIACC</h1>
+        <p class="lead">Sistema de Cálculo de Áreas</p>
+    </header>
+    
+    <div class="container" >
+        <div class="row">
+            <div class="col-md-6">
+                
+
+                <div class="bg-light p-4">
+                    <h2 class="text-primary">Cálculo da área total de um pivô circular</h2>
+                    <div >
+                        <h3>Digite o raio do seu pivô</h3>
+                        <form action="" >
+                            <input type="number" class="form-control mb-3" id="Raio" required>
+                            <button type="button" class="btn btn-primary" onclick="CalcularAreaPerdida()" type="submit">Calcular</button>
+                            <button type="reset" class="btn btn-secondary ms-2" onclick="Limpar()" >Limpar</button>
+                        </form>
+                    </div>
+                    <h3 id="area3"></h3>
+                    <br>
+                    <h2 class="text-primary">Cálculo da área perdida</h2>
+                  
+                    <h3 id="area"></h3>
+                </div>
+                <br>
+
+
+                <div class="centralizar ">
+                    <h2>Área de plantio do CTBJ</h2>
+                    <img src="fotos/area.jpg" alt="Área Perdida" class="img-fluid mt-3" style="width: 300px; " >
+                    <br>
+                    <br>         
+                <button type="submit" class="btn btn-primary" onclick="Area1()" >Area 1</button>
+            
+                <button type="submit" class="btn btn-primary" onclick="Area2()" >Area 2</button>
+              
+                <button type="submit" class="btn btn-primary" onclick="Area3()" >Area 3</button>
+             
+                <button type="submit" class="btn btn-primary" onclick="Area4()" >Area 4</button>
+         
+                <button type="submit" class="btn btn-primary" onclick="Area5()" >Area 5</button>
+               
+                <button type="submit" class="btn btn-primary" onclick="Area6()" >Area 6</button>
+                <br>
+                <button type="submit" class="btn btn-primary" onclick="Area7()" >Area 7</button>        
+                        
+                </div>
+              <br>
+
+              <div >
+
+
+            </div> 
+            </div>
+            <div class="col-md-6">
+                <div class="bg-light p-4">
+                    <h2 class="text-primary">Cálculo da área do pivô com triangularização</h2>
+                    <div>
+                        <h3>Digite os pontos: (X, Y)</h3>
+                        <form action="">
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <label for="Xm" class="form-label">Ponto A (X)</label>
+                                    <input type="number" class="form-control" id="Xm">
+                                </div>
+                                <div class="col">
+                                    <label for="Ym" class="form-label">Ponto A (Y)</label>
+                                    <input type="number" class="form-control" id="Ym">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <label for="Xn" class="form-label">Ponto B (X)</label>
+                                    <input type="number" class="form-control" id="Xn">
+                                </div>
+                                <div class="col">
+                                    <label for="Yn" class="form-label">Ponto B (Y)</label>
+                                    <input type="number" class="form-control" id="Yn">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <label for="Xp" class="form-label">Ponto C (X)</label>
+                                    <input type="number" class="form-control" id="Xp">
+                                </div>
+                                <div class="col">
+                                    <label for="Yp" class="form-label">Ponto C (Y)</label>
+                                    <input type="number" class="form-control" id="Yp">
+                                </div>
+                            </div>
+                           
+                            <div class="d-flex justify-content-center" >
+                                <button type="reset" class="btn btn-primary" onclick="AdicionarMais()" >Adicionar mais areas</button>
+                                <button type="reset" class="btn btn-secondary ms-2" onclick="Limpar2()">Limpar</button>  
+                                
+                            </div>
+                            
+                        </form>
+                    </div>
+                    <h3 id="area2"></h3>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+<br>
+    <script src="codigo.js"></script>
+</body>
+
+</html>

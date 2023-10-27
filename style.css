@@ -1,0 +1,51 @@
+.tudo {
+    background-color: #808080; /* Cinza escuro */
+}
+
+.centralizar {
+    text-align: center;
+    margin: 6% auto;
+    padding: 20px;
+    background-color: #555555; /* Cinza mais escuro */
+    max-width: 600px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.centralizar h2 {
+    margin-bottom: 20px;
+    color: #ffffff; /* Branco */
+}
+
+.centralizar2 {
+    text-align: center;
+    margin: 5% auto;
+}
+
+.botao {
+    border-radius: 20px;
+    margin-top: 10px;
+    background-color: #007bff; /* Azul escuro */
+    border-color: #007bff;
+    color: #ffffff; /* Texto branco nos botões */
+}
+
+.botao.btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+/* Alterando a cor dos botões secundários e de sucesso, se necessário */
+.botao.btn-secondary,
+.botao.btn-success {
+    background-color: #555555; /* Cinza mais escuro */
+    border-color: #555555;
+}
+
+.botao.btn-secondary:focus,
+.botao.btn-success:focus {
+    box-shadow: 0 0 0 0.2rem rgba(85, 85, 85, 0.5); /* Sombra um pouco mais clara */
+}
+.bg-light{
+    height: auto; 
+    display: inline-block;
+    
+}
